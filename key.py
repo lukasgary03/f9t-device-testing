@@ -101,7 +101,7 @@ def SetupKeysight(sigtype):
       SocketSend(s,b'CONF:FREQ 1.0,.001,(@1)')  #this overrides other commands, so set here
       SocketSend(s,b'CONF:FREQ 1.e7,.001,(@2)')  #this overrides other commands, so set here
     SocketSend(s,b'CONF:TINT (@1),(@2)') 
-    SocketSend(s,b'INP1:IMP 50') 
+    SocketSend(s,b'INP1:IMP 50') #change 50 to 1.0e6 if want first input to be an f9t device as well
     #input('imp1 should be 50 OHms or 1.0E6  type anything to continue')
     if sigtype=='mropps':
       SocketSend(s,b'INP2:IMP 1.0e6') 
@@ -153,9 +153,7 @@ def main():
     global count
     #pps='n'  # if y does pps setup   if n does 10 MHz
     #pps='y'  # if y does pps setup   if n does 10 MHz
-    datadir="C:\\Users\\lburzynski\\OneDrive - Masterclock, Inc\\Desktop\\f9t collection"
-    #datadir="c:\\Users\\Demetrios\\Documents\\Data_comps"
-    #datadir="c:\\Users\\Demetrios\\Documents\\KeysightCounter"
+    datadir"C:\\insert_data_dir_here"
     args=sys.argv[1:]
     nargs=len(args)
     print('nargs='+str(nargs))
