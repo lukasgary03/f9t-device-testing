@@ -33,3 +33,7 @@ python append.py 59701.unwrapped %outfile% 0 99999
 python append.py 59702.unwrapped %outfile% 0 99999  
 #repeat for each collected date that you want to be combined into the %outfile%  
 
+
+
+Additional notes:  
+add your actual dir you want file to be stored in to line 156 on the key.py before running for the first time
