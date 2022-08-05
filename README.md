@@ -28,9 +28,9 @@ appendfile.py (best to perform in windows command line)
 Takes out the part of th emjd-named file that you want and appends it to the final file for plotting, etc.    
 usage:  
 set outfile=example_file_name.txt  
-python append.py 59700.unwrapped %outfile% 0 99999  
-python append.py 59701.unwrapped %outfile% 0 99999  
-python append.py 59702.unwrapped %outfile% 0 99999  
+python appendfile.py 59700.unwrapped %outfile% 0 99999  
+python appendfile.py 59701.unwrapped %outfile% 0 99999  
+python appendfile.py 59702.unwrapped %outfile% 0 99999  
 #repeat for each collected date that you want to be combined into the %outfile%  
 
 
