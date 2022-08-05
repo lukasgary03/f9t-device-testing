@@ -14,11 +14,15 @@ python key.py mropps #sets the impedance to 1Mohm for f9t-like devices
 #additional arguments include 10mhz or t2p for tick to phase
 
 
+
+
 unwrap.py (best to perform in windows command line)
 Adjusts the data output of key.py by taking out the 1-second jumps. So if the data goes rom .0001 to .99999, it makes the last point -.00001 seconds. 
 example:
 set mjd=59700
 python unwrap.py %mjd%.mropps %mjd%.unwrapped 1 pps ns
+
+
 
 
 appendfile.py (best to perform in windows command line)
